@@ -56,9 +56,13 @@ class MusicPlayer extends Component {
                             <IconButton onClick={() => {this.props.is_playing ? this.pauseSong(): this.playSong()}}>
                                 {this.props.is_playing? <Pause /> : <PlayArrow/>}
                             </IconButton>
-                            <IconButton onClick={() => this.skipSong()}>
-                                 {this.props.votes} / {this.props.votes_required} <SkipNext/>
+                            <IconButton onClick={() => this.skipSong()} className={"skipButton"}>
+                               <SkipNext className={"skipButton"} />
                             </IconButton>
+                            <Typography component={"h6"} variant={"h6"}>
+                                Votes to Skip: {this.props.votes} / {this.props.votes_required}
+                            </Typography>
+
                         </div>
                     </Grid>
                 </Grid>

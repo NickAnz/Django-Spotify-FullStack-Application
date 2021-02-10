@@ -49,6 +49,10 @@ body {
   color:black;
 }
 
+.skipButton{
+
+}
+
 .musicPlayer{
   padding: 5%;
   max-height: 500px;
