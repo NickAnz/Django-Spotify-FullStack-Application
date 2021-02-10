@@ -1,0 +1,121 @@
+  
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to right,
+    hsl(179, 100%, 30%),
+    hsl(179, 100%, 30%)
+  );
+  transition: background-image 0.5s linear;
+  background-image: url("../images/bak.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+}
+
+#main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+}
+
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-bottom: 2%;
+  border-radius: 5%;
+  min-height: 20%;
+  padding-top: 5%;
+}
+
+
+
+.title{
+  color:black;
+}
+
+.musicPlayer{
+  padding: 5%;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+
+.circle{
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  background: purple;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+
+.xlarge{
+  width: 400px;
+  height: 400px;
+}
+
+.xxlarge{
+  width: 300px;
+  height: 300px;
+}
+
+.large{
+  width: 200px;
+  height: 200px;
+}
+
+.medium{
+  width: 100px;
+  height: 100px;
+
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+
+  50%{
+    transform: scale(1.2);
+  }
+
+  100%{
+    transform: scale(0.8);
+  }
+}
